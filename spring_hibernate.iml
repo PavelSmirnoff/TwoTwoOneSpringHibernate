@@ -5,8 +5,12 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
-        <naming-strategy-map />
+        <datasource-mapping>
+          <factory-entry name="spring_hibernate" />
+        </datasource-mapping>
+        <naming-strategy-map>
+          <unit-entry name="spring_hibernate" />
+        </naming-strategy-map>
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
