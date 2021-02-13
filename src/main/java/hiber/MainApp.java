@@ -44,6 +44,12 @@ public class MainApp {
             System.out.println();
         }
 
+        String findCarModel = "Car1";
+        int findCarSeries = 1;
+        System.out.printf("Car модели %s и серии %d принадлежит:\n",findCarModel,findCarSeries);
+        userService.getUserCar(findCarModel, findCarSeries)
+                .forEach(x -> System.out.println(x.getFirstName()+ " "+ x.getLastName()));
+
         context.close();
     }
 }
